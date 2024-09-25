@@ -15,17 +15,26 @@
         <div class="div1">
             <div>
                 <label for="first-name-input" class="form-label">First Name</label>
-                <input type="text" id="first-name-input" required class="form-control" class="form-select" />
+                <input type="text" id="first-name-input" required class="form-control" />
+                <div class="invalid-feedback">
+                    Please enter your first name.
+                </div>
             </div>
 
             <div>
                 <label for="last-name-input" class="form-label">Last Name</label>
-                <input type="text" id="last-name-input" required class="form-control"  class="form-select"/>
+                <input type="text" id="last-name-input" required class="form-control" />
+                <div class="invalid-feedback">
+                    Please enter your last name.
+                </div>
             </div>
 
             <div>
                 <label for="email-input" class="form-label">Email Address</label>
-                <input type="email" id="email-input" required class="form-control"  class="form-select"/>
+                <input type="email" id="email-input" required class="form-control" />
+                <div class="invalid-feedback">
+                    Please enter a valid email address.
+                </div>
             </div>
         </div>
 
@@ -34,34 +43,47 @@
         <div class="div2">
             <div>
                 <label for="college-input" class="form-label">College</label>
-                <input type="text" id="college-input" required class="form-control" class="form-select" />
-            </div>
-
-            <div>
-                <div>
-                    <label for="grad-year-select" class="form-label">Graduation Year</label>
-                    <select id="grad-year-select" required>
-                        <option value="" disabled selected>Choose...</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                    </select>
+                <input type="text" id="college-input" required class="form-control" />
+                <div class="invalid-feedback">
+                    Please enter your college name.
                 </div>
-
             </div>
 
             <div>
-                <label for="roll-no-input" class="form-label" >Roll No.</label>
-                <input type="text" id="roll-no-input" required class="form-control" class="form-select"/>
+                <label for="grad-year-select" class="form-label">Graduation Year</label>
+                <select id="grad-year-select" required class="form-select">
+                    <option value="" disabled selected>Choose...</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select your graduation year.
+                </div>
+            </div>
+
+            <div>
+                <label for="roll-no-input" class="form-label">Roll No.</label>
+                <input type="text" id="roll-no-input" required class="form-control" />
+                <div class="invalid-feedback">
+                    Please enter your roll number.
+                </div>
             </div>
         </div>
+
         <br>
+
         <div>
-            <input type="checkbox"  id="conditions-checkbox" name="conditions-checkbox"  class="form-select"  required/>
-            <label for="conditions-checkbox" class="form-label" class="form-control" >Agree to the terms and conditions</label>
+            <input type="checkbox" id="conditions-checkbox" name="conditions-checkbox" class="form-check-input" required />
+            <label for="conditions-checkbox" class="form-check-label">Agree to the terms and conditions</label>
+            <div class="invalid-feedback">
+                You must agree to the terms and conditions.
+            </div>
         </div>
+
         <br>
+
         <button type="submit" class="btn btn-primary">Submit form</button>
     </form>
 
